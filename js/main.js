@@ -1,5 +1,18 @@
 "use strict";
 
-let num = 49;
+let num = 50;
 
-(num === 50) ? console.log("true") : console.log("error");
+// while (num <= 49){
+//     console.log(num);
+//     num++;
+// }
+// do {
+//     console.log(num);
+//     num++;
+// } while(num<10);
+for(let i = 0; i <= 10; i++){
+   if( i === 7){
+       continue;
+   }
+    console.log(i);
+}
