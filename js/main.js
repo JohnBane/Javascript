@@ -1,19 +1,51 @@
-"use strict";
+// "use strict";
 
-function learn(lang, callback) {
-    console.log(`Я учу ${lang}`);
-    callback();
-}
-function done(){
-    console.log(`Я прошел этот урок`);
-}
-learn(`LearnJavascript`, done);
+// function copy(mainObj){
+//     let objCopy = {};
 
-function myName(name,surname,age,callback){
-    console.log(`Меня зовут ${name}, фамилия: ${surname} и мне ${age} года`);
-}
-function myPersonalD(){
-    console.log("Это мои данные");
-}
-myName(`Адилет`, `Урманбетов`, `23`, myPersonalD );
+//     let key;
+//     for( key in mainObj){
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
+// }
 
+// const numbers = {
+//     a: 2,
+//     b: 5,
+//     c: {
+//         x: 7,
+//         y: 4
+//     }
+    
+// };
+
+// // const newNumbers = copy(numbers);
+
+// // newNumbers.a = 10;
+
+// // console.log(newNumbers);
+// // console.log(numbers);
+// const addNumbers = {
+//     g: 50,
+//     h: 60
+// };
+
+// const clone = Object.assign({},addNumbers);
+
+// clone.h = 100;
+// console.log(clone);
+// console.log(numbers);
+
+// const oldArray = ["1", "2", "3"];
+// const newArray = oldArray.slice();
+
+// newArray[0] = "qweasd";
+
+// console.log(newArray);
+// console.log(oldArray);
+
+const video = ["Youtube","TikTOk","Instagram"],
+      blogs = ["Instagram","FaceBook","Vk"],
+      my = [...video,...blogs,"D2ru", "cybersport"];
+console.log(my);
